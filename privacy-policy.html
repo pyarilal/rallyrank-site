@@ -3,230 +3,499 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy - RallyRank</title>
-  <meta name="description" content="Privacy Policy for the RallyRank badminton club ranking application">
+  <meta name="description" content="Privacy Policy for the RallyRank amateur badminton club ranking application.">
+  <title>Privacy Policy | RallyRank</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: #18283b;
+      background: #f6f5f1;
+    }
+
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: #185b89; text-underline-offset: 0.18em; }
+    a:hover { color: #103e5e; }
+    a:focus-visible { outline: 3px solid #78b5df; outline-offset: 4px; border-radius: 3px; }
+
+    .skip-link {
+      position: absolute;
+      left: 1rem;
+      top: -4rem;
+      z-index: 2;
+      padding: 0.5rem 0.75rem;
+      background: white;
+    }
+
+    .skip-link:focus { top: 0.75rem; }
+
+    .wrap {
+      width: min(100% - 2rem, 960px);
+      margin-inline: auto;
+    }
+
+    .site-header {
+      background: #112338;
+      color: #fff;
+    }
+
+    .site-header .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding-block: 1rem;
+    }
+
+    .brand {
+      color: #fff;
+      font-size: 1.15rem;
+      font-weight: 750;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+    }
+
+    .site-header nav {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .site-header nav a { color: #d7e9f5; }
+    .site-header a:focus-visible { outline-color: #b5def6; }
+
+    .hero {
+      background: #112338;
+      color: #fff;
+      padding: clamp(2.5rem, 7vw, 5rem) 0 4rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.5rem;
+      color: #b4d3e7;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1, h2 { line-height: 1.2; }
+
+    h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(2rem, 6vw, 3.25rem);
+      letter-spacing: -0.035em;
+    }
+
+    .hero p:last-child {
+      max-width: 46rem;
+      margin: 0;
+      color: #e0eaf1;
+      font-size: 1.08rem;
+    }
+
+    main { padding-bottom: 4rem; }
+
+    .content {
+      position: relative;
+      margin-top: -1.5rem;
+      padding: clamp(1.25rem, 4vw, 2.5rem);
+      background: #fff;
+      border: 1px solid #e2e6e7;
+      border-radius: 1.25rem;
+      box-shadow: 0 12px 36px rgb(17 35 56 / 7%);
+    }
+
+    section + section {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e3e8ea;
+    }
+
+    h2 {
+      margin: 0 0 1rem;
+      font-size: 1.45rem;
+      color: #112338;
+    }
+
+    p { margin: 0.75rem 0; }
+
+    ul {
+      margin: 0.75rem 0;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      padding-left: 0.3rem;
+      margin: 0.65rem 0;
+    }
+
+    li::marker {
+      color: #185b89;
+      font-weight: 700;
+    }
+
+    .summary {
+      margin: 0;
+      padding: 1rem 1.15rem;
+      border-left: 3px solid #70a8cb;
+      border-radius: 0.35rem;
+      background: #eff6fa;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .detail {
+      padding: 1.25rem;
+      border: 1px solid #e3e8ea;
+      border-radius: 0.85rem;
+      background: #fbfcfc;
+    }
+
+    .detail h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.05rem;
+      color: #112338;
+    }
+
+    .detail p { margin: 0; }
+
+    .support {
+      padding: 1.25rem;
+      border-radius: 0.85rem;
+      background: #eff6fa;
+    }
+
+    .support p:last-child { margin-bottom: 0; }
+
+    .request-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 48px;
+      padding: 0.65rem 1.1rem;
+      border-radius: 0.65rem;
+      background: #185b89;
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .request-link:hover {
+      background: #103e5e;
+      color: #fff;
+    }
+
+    .site-footer {
+      padding: 1.5rem 0 2rem;
+      color: #526578;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 640px) {
+      .details { grid-template-columns: 1fr; }
+      .site-header .wrap { flex-wrap: wrap; }
+      .hero { padding-bottom: 3rem; }
+    }
+  </style>
 </head>
 
 <body>
-  <main>
-    <h1>RallyRank Privacy Policy</h1>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <p><strong>Last updated: 3 November 2026</strong></p>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="RallyRank home">RallyRank</a>
+      <nav aria-label="Site navigation">
+        <a href="index.html">Home</a>
+        <a href="account-deletion.html">Account deletion</a>
+      </nav>
+    </div>
+  </header>
 
-    <p>
-      RallyRank is a private amateur badminton club application for recording matches,
-      managing club memberships, maintaining rankings, and viewing player statistics
-      and performance information.
-    </p>
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Privacy and data</p>
+      <h1>RallyRank Privacy Policy</h1>
+      <p>
+        How RallyRank collects, uses, protects and retains information when you use
+        the badminton club ranking application.
+      </p>
+    </div>
+  </div>
 
-    <p>
-      This Privacy Policy explains what information RallyRank collects, how it is used
-      and stored, and the choices available to users regarding their information.
-    </p>
+  <main id="main-content" class="wrap">
+    <div class="content">
 
-    <h2>1. Information We Collect</h2>
+      <section aria-labelledby="intro-heading">
+        <h2 id="intro-heading">About this policy</h2>
 
-    <p>Depending on how you use RallyRank, we may process the following information:</p>
+        <p><strong>Last updated: 3 November 2026</strong></p>
 
-    <ul>
-      <li>Email address used for account registration, authentication, verification, and account recovery.</li>
-      <li>Authentication information necessary to securely operate your RallyRank account.</li>
-      <li>Google account identity information when you choose Google Sign-In.</li>
-      <li>Player display name and optional profile information such as a biography.</li>
-      <li>Optional player profile photograph.</li>
-      <li>Club memberships, roles, membership status, invitations, and join requests.</li>
-      <li>Badminton match information including players, guest player names, scores, results, and match history.</li>
-      <li>Ranking, season, statistical, award, and other badminton performance information derived from match records.</li>
-    </ul>
+        <p>
+          RallyRank is a private amateur badminton club application for recording
+          matches, managing club memberships, maintaining rankings, and viewing
+          player statistics and performance information.
+        </p>
 
-    <p>
-      RallyRank does not require users to provide location, contacts, microphone recordings,
-      SMS messages, call logs, or similar device information for its normal functionality.
-    </p>
+        <p class="summary">
+          This Privacy Policy explains what information RallyRank collects, how it is
+          used and stored, and the choices available to users regarding their information.
+        </p>
+      </section>
 
-    <h2>2. How We Use Information</h2>
+      <section aria-labelledby="collect-heading">
+        <h2 id="collect-heading">1. Information we collect</h2>
 
-    <p>Information is used to provide and operate RallyRank, including to:</p>
+        <p>Depending on how you use RallyRank, we may process:</p>
 
-    <ul>
-      <li>Create, authenticate, secure, and recover user accounts.</li>
-      <li>Verify email addresses and process password recovery requests.</li>
-      <li>Create and manage badminton clubs and memberships.</li>
-      <li>Record and display match history.</li>
-      <li>Calculate rankings, player statistics, seasons, Best Partner results, Face-Off results, awards, and related badminton information.</li>
-      <li>Display player profiles and profile photographs to authorized club members where applicable.</li>
-      <li>Support account and club administration.</li>
-      <li>Maintain the security, reliability, and integrity of the service.</li>
-    </ul>
+        <ul>
+          <li>Email address used for account registration, authentication, verification and account recovery.</li>
+          <li>Authentication information necessary to securely operate your RallyRank account.</li>
+          <li>Google account identity information when you choose Google Sign-In.</li>
+          <li>Player display name and optional profile information such as a biography.</li>
+          <li>Optional player profile photograph.</li>
+          <li>Club memberships, roles, membership status, invitations and join requests.</li>
+          <li>Badminton match information including players, guest player names, scores, results and match history.</li>
+          <li>Ranking, season, statistical, award and other badminton performance information derived from match records.</li>
+        </ul>
 
-    <h2>3. Authentication</h2>
+        <p>
+          RallyRank does not require users to provide location, contacts, microphone
+          recordings, SMS messages, call logs, or similar device information for its
+          normal functionality.
+        </p>
+      </section>
 
-    <p>
-      RallyRank supports email-based authentication and Google Sign-In.
-    </p>
+      <section aria-labelledby="use-heading">
+        <h2 id="use-heading">2. How we use information</h2>
 
-    <p>
-      Email addresses may be used for account verification and password recovery.
-      RallyRank uses authentication services provided through Supabase.
-    </p>
+        <p>Information is used to provide and operate RallyRank, including to:</p>
 
-    <p>
-      If you choose Google Sign-In, Google processes the authentication request and
-      provides the information necessary to authenticate your RallyRank account.
-      RallyRank does not receive your Google password.
-    </p>
+        <ul>
+          <li>Create, authenticate, secure and recover user accounts.</li>
+          <li>Verify email addresses and process password recovery requests.</li>
+          <li>Create and manage badminton clubs and memberships.</li>
+          <li>Record and display match history.</li>
+          <li>Calculate rankings, player statistics, seasons, Best Partner results, Face-Off results, awards and related badminton information.</li>
+          <li>Display player profiles and profile photographs to authorized club members where applicable.</li>
+          <li>Support account and club administration.</li>
+          <li>Maintain the security, reliability and integrity of the service.</li>
+        </ul>
+      </section>
 
-    <h2>4. Data Storage and Service Providers</h2>
+      <section aria-labelledby="auth-heading">
+        <h2 id="auth-heading">3. Authentication</h2>
 
-    <p>
-      RallyRank uses Supabase for backend services including authentication,
-      PostgreSQL database services, file storage, and server-side functions.
-    </p>
+        <p>RallyRank supports email-based authentication and Google Sign-In.</p>
 
-    <p>
-      Profile photographs uploaded to RallyRank are stored using RallyRank's backend
-      storage services. Access to profile photographs is restricted according to
-      RallyRank's application authorization rules.
-    </p>
+        <p>
+          Email addresses may be used for account verification and password recovery.
+          RallyRank uses authentication services provided through Supabase.
+        </p>
 
-    <p>
-      RallyRank may also use an email delivery provider to send account verification
-      and password-recovery messages.
-    </p>
+        <p>
+          If you choose Google Sign-In, Google processes the authentication request and
+          provides the information necessary to authenticate your RallyRank account.
+          RallyRank does not receive your Google password.
+        </p>
+      </section>
 
-    <p>
-      Google services are involved when a user voluntarily chooses Google Sign-In.
-    </p>
+      <section aria-labelledby="services-heading">
+        <h2 id="services-heading">4. Data storage and service providers</h2>
 
-    <h2>5. Sharing of Information</h2>
+        <div class="details">
+          <div class="detail">
+            <h3>Supabase</h3>
+            <p>
+              RallyRank uses Supabase for authentication, PostgreSQL database services,
+              file storage and server-side functions.
+            </p>
+          </div>
 
-    <p>
-      RallyRank does not sell users' personal information.
-    </p>
+          <div class="detail">
+            <h3>Google</h3>
+            <p>
+              Google services are involved when a user voluntarily chooses Google Sign-In.
+            </p>
+          </div>
 
-    <p>
-      Information may be processed by service providers that are necessary to operate
-      RallyRank, such as backend hosting, authentication, storage, email delivery,
-      and Google authentication services.
-    </p>
+          <div class="detail">
+            <h3>Email delivery</h3>
+            <p>
+              RallyRank may use an email delivery provider to send account verification
+              and password-recovery messages.
+            </p>
+          </div>
 
-    <p>
-      Club-related information such as player names, match results, rankings, statistics,
-      profile information, and profile photographs may be visible to authorized members
-      of the relevant RallyRank club as required by the application's functionality.
-    </p>
+          <div class="detail">
+            <h3>Profile photos</h3>
+            <p>
+              Uploaded profile photographs are stored using RallyRank's backend storage
+              services and access is restricted according to application authorization rules.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <h2>6. Advertising and Tracking</h2>
+      <section aria-labelledby="sharing-heading">
+        <h2 id="sharing-heading">5. Sharing of information</h2>
 
-    <p>
-      RallyRank does not currently contain third-party advertising and does not use
-      user information for advertising purposes.
-    </p>
+        <p>RallyRank does not sell users' personal information.</p>
 
-    <h2>7. Profile Photos</h2>
+        <p>
+          Information may be processed by service providers necessary to operate RallyRank,
+          such as backend hosting, authentication, storage, email delivery and Google
+          authentication services.
+        </p>
 
-    <p>
-      Adding a profile photograph is optional.
-    </p>
+        <p>
+          Club-related information such as player names, match results, rankings,
+          statistics, profile information and profile photographs may be visible to
+          authorized members of the relevant RallyRank club as required by the
+          application's functionality.
+        </p>
+      </section>
 
-    <p>
-      When a user selects a photograph, RallyRank allows the image to be adjusted
-      before upload. The resulting profile image is stored by RallyRank's backend
-      storage service and is used as part of the player's RallyRank profile.
-    </p>
+      <section aria-labelledby="ads-heading">
+        <h2 id="ads-heading">6. Advertising and tracking</h2>
 
-    <h2>8. Match and Historical Sporting Data</h2>
+        <p>
+          RallyRank does not currently contain third-party advertising and does not use
+          user information for advertising purposes.
+        </p>
+      </section>
 
-    <p>
-      RallyRank maintains match scores, results, rankings, seasons, statistics, and
-      related sporting records so that clubs can maintain accurate historical records.
-    </p>
+      <section aria-labelledby="photos-heading">
+        <h2 id="photos-heading">7. Profile photos</h2>
 
-    <p>
-      Some sporting records may therefore remain after an account is deleted where
-      necessary to preserve the integrity of other players' match histories, rankings,
-      and club records.
-    </p>
+        <p>Adding a profile photograph is optional.</p>
 
-    <p>
-      When this occurs, the deleted player's personal account identity is removed or
-      anonymized according to RallyRank's account-deletion process. Historical sporting
-      records are not intended to continue identifying the deleted account holder.
-    </p>
+        <p>
+          When a user selects a photograph, RallyRank allows the image to be adjusted
+          before upload. The resulting profile image is stored by RallyRank's backend
+          storage service and is used as part of the player's RallyRank profile.
+        </p>
+      </section>
 
-    <h2>9. Account and Data Deletion</h2>
+      <section aria-labelledby="history-heading">
+        <h2 id="history-heading">8. Match and historical sporting data</h2>
 
-    <p>
-      Users can request permanent deletion of their RallyRank account.
-    </p>
+        <p>
+          RallyRank maintains match scores, results, rankings, seasons, statistics and
+          related sporting records so that clubs can maintain accurate historical records.
+        </p>
 
-    <p>
-      Account deletion removes the user's authentication account and associated personal
-      account information according to RallyRank's deletion process. Associated profile
-      photographs are also scheduled for removal.
-    </p>
+        <p>
+          Some sporting records may therefore remain after an account is deleted where
+          necessary to preserve the integrity of other players' match histories, rankings
+          and club records.
+        </p>
 
-    <p>
-      Certain historical badminton records may be retained in anonymized form when
-      required to preserve match, ranking, season, and club history involving other players.
-    </p>
+        <p>
+          When this occurs, the deleted player's personal account identity is removed or
+          anonymized according to RallyRank's account-deletion process. Historical sporting
+          records are not intended to continue identifying the deleted account holder.
+        </p>
+      </section>
 
-    <p>
-      For account-deletion instructions, visit:
-      <a href="account-deletion.html">RallyRank Account Deletion</a>.
-    </p>
+      <section aria-labelledby="deletion-heading">
+        <h2 id="deletion-heading">9. Account and data deletion</h2>
 
-    <h2>10. Data Retention</h2>
+        <p>
+          Users can request permanent deletion of their RallyRank account.
+        </p>
 
-    <p>
-      RallyRank retains account and club information while it is required to provide
-      the service or until it is deleted according to RallyRank's account and club
-      management processes.
-    </p>
+        <p>
+          Account deletion removes the user's authentication account and associated
+          personal account information according to RallyRank's deletion process.
+          Associated profile photographs are also scheduled for removal.
+        </p>
 
-    <p>
-      Historical sporting records may be retained after account deletion in anonymized
-      form where necessary to preserve legitimate club and match history.
-    </p>
+        <p>
+          Certain historical badminton records may be retained in anonymized form when
+          required to preserve match, ranking, season and club history involving other players.
+        </p>
 
-    <h2>11. Security</h2>
+        <p>
+          <a class="request-link" href="account-deletion.html">View account deletion instructions</a>
+        </p>
+      </section>
 
-    <p>
-      RallyRank uses authentication, database authorization rules, access controls,
-      and encrypted network connections to protect information.
-    </p>
+      <section aria-labelledby="retention-heading">
+        <h2 id="retention-heading">10. Data retention</h2>
 
-    <p>
-      No internet-based service can guarantee absolute security, but RallyRank is
-      designed to restrict access to club and account information according to
-      authenticated user permissions.
-    </p>
+        <p>
+          RallyRank retains account and club information while it is required to provide
+          the service or until it is deleted according to RallyRank's account and club
+          management processes.
+        </p>
 
-    <h2>12. Children's Privacy</h2>
+        <p>
+          Historical sporting records may be retained after account deletion in anonymized
+          form where necessary to preserve legitimate club and match history.
+        </p>
+      </section>
 
-    <p>
-      RallyRank is not specifically designed as a service directed to young children.
-      Clubs and users are responsible for using RallyRank in accordance with applicable
-      laws and the eligibility requirements presented through the application and
-      distribution platform.
-    </p>
+      <section aria-labelledby="security-heading">
+        <h2 id="security-heading">11. Security</h2>
 
-    <h2>13. Changes to This Privacy Policy</h2>
+        <p>
+          RallyRank uses authentication, database authorization rules, access controls
+          and encrypted network connections to protect information.
+        </p>
 
-    <p>
-      This Privacy Policy may be updated when RallyRank's functionality, service
-      providers, or legal requirements change. The latest version will be published
-      on this page with an updated revision date.
-    </p>
+        <p>
+          No internet-based service can guarantee absolute security, but RallyRank is
+          designed to restrict access to club and account information according to
+          authenticated user permissions.
+        </p>
+      </section>
 
-    <h2>14. Contact</h2>
+      <section aria-labelledby="children-heading">
+        <h2 id="children-heading">12. Children's privacy</h2>
 
-    <p>
-      For privacy questions, support, or account-related enquiries, contact:
-      <a href="mailto:rallyrank.dev@gmail.com">rallyrank.dev@gmail.com</a>
-    </p>
+        <p>
+          RallyRank is not specifically designed as a service directed to young children.
+          Clubs and users are responsible for using RallyRank in accordance with applicable
+          laws and the eligibility requirements presented through the application and
+          distribution platform.
+        </p>
+      </section>
 
-    <p><a href="index.html">Back to RallyRank</a></p>
+      <section aria-labelledby="changes-heading">
+        <h2 id="changes-heading">13. Changes to this Privacy Policy</h2>
+
+        <p>
+          This Privacy Policy may be updated when RallyRank's functionality, service
+          providers or legal requirements change. The latest version will be published
+          on this page with an updated revision date.
+        </p>
+      </section>
+
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">14. Contact</h2>
+
+        <div class="support">
+          <p>
+            For privacy questions, support or account-related enquiries, contact:
+          </p>
+          <p>
+            <a href="mailto:rallyrank.dev@gmail.com">rallyrank.dev@gmail.com</a>
+          </p>
+        </div>
+      </section>
+
+    </div>
   </main>
+
+  <footer class="site-footer wrap">
+    RallyRank · Private club badminton rankings
+  </footer>
 </body>
 </html>
